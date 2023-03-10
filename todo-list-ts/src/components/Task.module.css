@@ -1,0 +1,54 @@
+.task {
+    display: flex;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.doneTask, .pendingTask {
+    font-size: 0.875rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    gap: 1.33rem;
+    background-color: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    padding: 1rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+
+.task p {
+    color: var(--gray-100);
+    font-weight: 400;
+    flex-wrap: nowrap;
+}
+
+.doneTask p{
+    text-decoration: line-through;
+}
+
+.deleteIcon {
+    color: var(--gray-300);
+    cursor: pointer;
+    padding: 0.3125rem;
+    box-sizing: content-box;
+}
+
+.deleteIcon:hover{
+    color: var(--danger);
+    background-color: var(--gray-400);
+    border-radius: 4px;
+}
+
+.checkedIcon, .uncheckedIcon {
+    padding: 0.125rem;
+    cursor: pointer;
+}
+
+.checkedIcon {
+    color: var(--purple);
+}
+
+.uncheckedIcon {
+    color: var(--blue);
+}
